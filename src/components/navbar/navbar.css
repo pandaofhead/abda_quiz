@@ -51,6 +51,11 @@ nav ul li a:not(.active):hover{
     border-radius: 5px;
 }
 
+nav .title:not(.active):hover{
+    color:white;
+    border-radius: 5px;
+}
+
 nav .menu{
     display: none;
     position: absolute;

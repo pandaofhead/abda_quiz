@@ -17,6 +17,6 @@ html{
     color:inherit;
   }
   section{
-    height: 100vh;
+    height: 90vh;
     scroll-snap-align: center;
   }
