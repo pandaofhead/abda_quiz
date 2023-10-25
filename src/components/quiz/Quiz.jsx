@@ -53,7 +53,7 @@ const SingleItem = ({ item }) => {
           <div className="imageContainer" ref={ref}>
             <Link to={item.link}>
               <img src={item.img} alt="" />
-              <div className="overlay">Click here to start</div>
+              
             </Link>
           </div>
           <motion.div className="textContainer" style={{ y }}>
@@ -61,7 +61,7 @@ const SingleItem = ({ item }) => {
               <h2>{item.title}</h2>
             </Link>
             <p>{item.description}</p>
-            <Link to={item.link}>START</Link>
+            
           </motion.div>
         </div>
       </div>

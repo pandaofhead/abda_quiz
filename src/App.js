@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Quiz1 from './components/quiz/Quiz1';
+import Quiz1 from './components/quiz/Quiz1/Quiz1';
 import Home from './components/home/Home';
 import MyNavbar from './components/navbar/Navbar';
 import Quiz2 from './components/quiz/Quiz2';
