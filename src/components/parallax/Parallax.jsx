@@ -15,7 +15,7 @@ const Parallax = (props) => {
 
   return (
     <div className="parallax" ref={ref}>
-      <motion.h1 style={{ y: yText }}>Quiz and Game</motion.h1>
+      <motion.h1 style={{ y: yText }}>Have Fun With Music</motion.h1>
       <motion.div className="mountains">
         <img src="/mountains.png" alt="" />
       </motion.div>
