@@ -1,29 +1,49 @@
 import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import React, {useState}from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { handleCatrgoryChange, handleDifficultyChange, handleTypeChange } from "../redux/actions";
 
 const SelectField = (props) => {
-    const {label} = props;
-    const [value, setValue] = useState('');
+  const { label, options } = props;
+  const dispatch = useDispatch();
+  const [value, setValue] = useState("");
 
-    const handleChange = (event) => {}
+  const handleChange = (event) => {
+    setValue(event.target.value);
+    switch (label) {
+      case "Category":
+        dispatch(handleCatrgoryChange(event.target.value));
+        break;
+      case "Difficulty":
+        dispatch(handleDifficultyChange(event.target.value));
+        break;
+      case "Type":
+        dispatch(handleTypeChange(event.target.value));
+        break;
+      case "Amount":
+        dispatch(handleTypeChange(event.target.value));
+        break;
+      default:
+        return;
+    }
+  };
 
-    return (
-        <>
-        <Box mt={3} width='100%' >
-            <FormControl fullWidth color="info">
-                <InputLabel>
-                {label}
-                </InputLabel>
-                <Select>
-                    <MenuItem value={value} label={label} onChaneg={handleChange}>Option 1</MenuItem>
-                    <MenuItem value={value}>Option 2</MenuItem>
-                    <MenuItem value={value}>Option 3</MenuItem>
-
-                </Select>
-            </FormControl>
-        </Box>
-        </>
-    );
-}
+  return (
+    <>
+      <Box mt={3} width="100%">
+        <FormControl fullWidth color="info">
+          <InputLabel>{label}</InputLabel>
+          <Select value={value} label={label} onChange={handleChange}>
+            {options.map(({ id, name }) => (
+              <MenuItem key={id} value={id}>
+                {name}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Box>
+    </>
+  );
+};
 
 export default SelectField;

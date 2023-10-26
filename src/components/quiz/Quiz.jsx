@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const items = [
   {
     id: 1,
-    title: "Quiz 1",
+    title: "Quiz",
     img: "/field.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Dive into a thrilling quiz adventure encompassing the realms of Music and Sports! Challenge your knowledge, discover fun facts, and enjoy a symphony of excitement in every question. Start now!",
     link: "/quiz/1",
   },
   {
