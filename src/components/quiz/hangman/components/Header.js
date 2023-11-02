@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import RuleModal from "./RuleModal";
-import HintModal from "./HintModal";
+import { RuleModal, HintModal } from "./Modal";
 
 const Header = () => {
   const [ruleOpen, setRuleOpen] = useState(false);
@@ -18,7 +17,8 @@ const Header = () => {
         >
           Rule
         </button>
-        {ruleOpen && <RuleModal closeRule={!setRuleOpen}/>}
+        {ruleOpen && <RuleModal setRuleOpenProp={setRuleOpen} />}
+
         <button
           className="btn"
           onClick={() => {
@@ -27,7 +27,7 @@ const Header = () => {
         >
           Hint
         </button>
-        {hintOpen && <HintModal />}
+        {hintOpen && <HintModal setHintOpenProp={setHintOpen} />}
       </div>
 
       <h2>Find the hidden word - Enter a letter</h2>

@@ -7,23 +7,23 @@ const items = [
   {
     id: 1,
     title: "Quiz",
-    img: "/field.jpg",
+    img: "/MusicRoom.jpg",
     description:
       "Dive into a thrilling quiz adventure encompassing the realms of Music and Sports! Challenge your knowledge, discover fun facts, and enjoy a symphony of excitement in every question. Start now!",
     link: "/quiz/1",
   },
   {
     id: 2,
-    title: "Quiz 2",
-    img: "/field.jpg",
+    title: "Hangman",
+    img: "/embouchure.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Step into the spotlight and test your knowledge! From legendary icons to modern chart-toppers, can you guess the celebrity star? Play the melody of success in Hangman's Celebrity Challenge!",
     link: "/quiz/2",
   },
   {
     id: 3,
-    title: "Quiz 3",
-    img: "/field.jpg",
+    title: "Memeory Game",
+    img: "/BandCamp.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "/quiz/3",
@@ -31,7 +31,7 @@ const items = [
   {
     id: 4,
     title: "Quiz 4",
-    img: "/field.jpg",
+    img: "/Christmas.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "/quiz/4",
@@ -45,7 +45,7 @@ const SingleItem = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
   return (
     <section>
       <div className="container">

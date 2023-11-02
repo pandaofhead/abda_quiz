@@ -1,9 +1,9 @@
 import React from "react";
 
-const Word = ({ selectedWord, correctLetters }) => {
+const Word = ({ selectedWordTitle, correctLetters }) => {
   return (
     <div className="word" id="word">
-      {selectedWord.split("").map((letter, i) => {
+      {selectedWordTitle.split("").map((letter, i) => {
         return (
           <span className="letter" key={i}>
             {correctLetters.includes(letter) ? letter : ""}
