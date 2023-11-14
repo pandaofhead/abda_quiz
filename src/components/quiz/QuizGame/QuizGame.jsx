@@ -10,7 +10,7 @@ import store from "./redux/store";
 
 
 
-const Quiz1 = () => {
+const QuizGame = () => {
   return (
     <>
     <Provider store={store}>
@@ -27,4 +27,4 @@ const Quiz1 = () => {
     </>
   );
 };
-export default Quiz1;
+export default QuizGame;

@@ -22,10 +22,13 @@ export default function MyNavbar() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to='/quiz/1'>Quiz1</NavLink>
+            <NavLink to='/quiz/1'>QuizGame</NavLink>
           </li>
           <li>
-            <NavLink to='/quiz/2'>Quiz2</NavLink>
+            <NavLink to='/quiz/2'>Hangman</NavLink>
+          </li>
+          <li>
+            <NavLink to='/quiz/3'>MemoryGame</NavLink>
           </li>
         </ul>
       </nav>

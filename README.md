@@ -1,14 +1,16 @@
 # Quiz Page
-## So far have done:
+## Have Completed:
 Home page
 ![My Image](/public/Home.png)  
-Routers  
-Quiz page  
+Quiz Game 
 ![My Image](/public/Quiz.png)  
 ![My Image](/public/InsideQuiz.png)  
-Hangman page
+Hangman
 ![My Image](/public/hangman.png)  
-![My Image](/public/InsideHangman.png)  
-
-## Coming Soon:
-Mememory Game
+![My Image](/public/InsideHangman.png)
+Memory Game  
+![My Image](/public/MemoryGame.png)  
+## Next:
+-Bug fixing  
+-UI improvement(resolution)  
+-Integration
