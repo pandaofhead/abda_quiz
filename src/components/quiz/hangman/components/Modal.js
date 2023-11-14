@@ -9,7 +9,7 @@ export function RuleModal({ setRuleOpenProp}) {
       <div className="popup">
         <h2>Rule</h2>
         <h3>
-          Guess the names of famous American singers.
+          Get the name of famous American singers before the man hangs!
         </h3>
         <p>
           You've only got 6 shots
@@ -19,7 +19,7 @@ export function RuleModal({ setRuleOpenProp}) {
             setRuleOpenProp(false);
           }}
         >
-          Close
+          close
         </button>
       </div>
     </div>
@@ -42,7 +42,7 @@ export function HintModal({ setHintOpenProp }) {
             setHintOpenProp(false);
           }}
         >
-          Close
+          close
         </button>
       </div>
     </div>
