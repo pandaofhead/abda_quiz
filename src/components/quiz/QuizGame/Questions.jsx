@@ -18,13 +18,12 @@ const Questions = () => {
     question_category,
     question_difficulty,
     question_type,
-    amount_of_question,
     score,
   } = useSelector((state) => state);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  let apiUrl = `/api.php?amount=${amount_of_question}`;
+  let apiUrl = `/api.php?amount=5`;
   if (question_category) {
     apiUrl = apiUrl.concat(`&category=${question_category}`);
   }
@@ -69,7 +68,7 @@ const Questions = () => {
     if (questionIndex + 1 < response.results.length) {
       setQuestionIndex(questionIndex + 1);
     } else {
-      navigate("/score");
+      navigate('/quiz/1/score');
     }
   };
 
