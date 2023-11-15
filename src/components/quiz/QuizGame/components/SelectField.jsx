@@ -20,9 +20,6 @@ const SelectField = (props) => {
       case "Type":
         dispatch(handleTypeChange(event.target.value));
         break;
-      case "Amount":
-        dispatch(handleTypeChange(event.target.value));
-        break;
       default:
         return;
     }

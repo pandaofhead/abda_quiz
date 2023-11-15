@@ -4,27 +4,27 @@ export const CHANGE_TYPE = "CHANGE_TYPE";
 export const CHANGE_AMOUNT = "CHANGE_AMOUNT";
 export const CHANGE_SCORE = "CHANGE_SCORE";
 
-export const handleCatrgoryChange = (category) => ({
+export const handleCatrgoryChange = (payload) => ({
   type: CHANGE_CATEGORY,
-  payload: category,
+  payload
 });
 
-export const handleDifficultyChange = (difficulty) => ({
+export const handleDifficultyChange = (payload) => ({
   type: CHANGE_DIFFICULTY,
-  payload: difficulty,
+  payload
 });
 
-export const handleTypeChange = (type) => ({
+export const handleTypeChange = (payload) => ({
   type: CHANGE_TYPE,
-  payload: type,
+  payload
 });
 
-export const handleAmountChange = (amount) => ({
+export const handleAmountChange = (payload) => ({
   type: CHANGE_AMOUNT,
-  payload: amount,
+  payload
 });
 
-export const handleScoreChange = (score) => ({
+export const handleScoreChange = (payload) => ({
   type: CHANGE_SCORE,
-  payload: score,
+  payload
 });
